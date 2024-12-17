@@ -1,7 +1,6 @@
-# CapStone_DOC#
 
 
- ECS Fargate Setup with ECR Image
+ ## ECS Fargate Setup with ECR Image
 
 ## Step 1: Log in to AWS Management Console
 1. Go to the [AWS Console](https://aws.amazon.com/console/).
