@@ -10,6 +10,14 @@
 7. [Troubleshooting Commands](#troubleshooting-commands)
 8. [Summary](#summary)
 
+
+
+## docker set up and permission
+sudo apt install docker.io -y
+sudo usermod -aG docker jenkins
+sudo chmod 666 /var/run/docker.sock
+
+
 ---
 
 ## 1. Pre-requisites
