@@ -54,7 +54,28 @@ sudo systemctl enable docker
 docker --version
 ```
 
----
+
+##sudo apt update
+sudo apt upgrade -y
+3. Install Docker Using the Official Docker Repository
+Instead of using docker.io, install Docker directly from the official Docker repository, which resolves most conflicts.
+
+Add Docker’s official GPG key and repository:
+
+bash
+Copy code
+curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo gpg --dearmor -o /usr/share/keyrings/docker-archive-keyring.gpg
+echo "deb [arch=$(dpkg --print-architecture) signed-by=/usr/share/keyrings/docker-archive-keyring.gpg] https://download.docker.com/linux/ubuntu $(lsb_release -cs) stable" | sudo tee /etc/apt/sources.list.d/docker.list > /dev/null
+Update the package list again:
+
+bash
+Copy code
+sudo apt update
+Install Docker and related tools:
+
+bash
+Copy code
+sudo apt install docker-ce docker-ce-cli containerd.io -y
 
 ## 3. Install Jenkins
 Jenkins requires Java to run.
