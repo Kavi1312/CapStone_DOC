@@ -29,6 +29,11 @@ Jenkins requires Java to run. Install OpenJDK 17:
 
 ```bash
 sudo apt-get install -y fontconfig openjdk-17-jre
+sudo apt install default-jdk
+   37  javac -version
+   38  sudo systemctl start jenkins
+   39  sudo systemctl enable jenkins
+   40  sudo systemctl status jenkins
 ```
 Verify Java installation:
 ```bash
