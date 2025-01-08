@@ -31,8 +31,8 @@ aws --version
 ---
 
 ### 2. Install `eksctl`
-```bash
-curl -s "https://github.com/weaveworks/eksctl/releases/latest/download/eksctl_$(uname -s)_amd64.tar.gz" | tar xz -C /tmp
+
+•	curl --silent --location "https://github.com/weaveworks/eksctl/releases/latest/download/eksctl_$(uname -s)_amd64.tar.gz" | tar xz -C /tm
 sudo mv /tmp/eksctl /usr/local/bin
 ```
 **Purpose**: Installs `eksctl`, a CLI tool to simplify EKS cluster creation and management.
